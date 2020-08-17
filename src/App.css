@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+/* custom variable used for colors */
+:root {
+    --mainBlue: #2a2a72;
+    --lightBlue: #009ffd;
+    --mainWhite: #f3f3f3;
+    --mainDark: #232528;
+    --mainYellow: #ffa400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    font-family: "Oswald", sans-serif !important;
+    background: var(--mainWhite) !important;
+    color: var(--mainDark) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.img-fluid {
+    width: 200px;
+    height: 200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.paragraph {
+    width: 160px;
+    height: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+/* setting up classes */
+.text-title {
+    font-family: "Permanent Maker", cursive;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-blue {
+    color: var(--mainBlue);
+}
+
+.text-bright {
+    color: var(--lightBlue);
 }
